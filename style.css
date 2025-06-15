@@ -42,41 +42,38 @@ h1{
 }
 
 .color1{
-background-color: #B80C09;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-.color2{
-    background-color: #0B4F6C;
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+.color2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .color3{
-    background-color: #01BAEF;
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .color4{
-    background-color: #FBFBFF;
+    
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .color5{
-    background-color: #040F16;
+    
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .lock{
@@ -84,15 +81,18 @@ justify-content: center;
     width: 80px;
     border-radius: 5px;
     border: none;
-   cursor: pointer;
-   background-color:rgba(128, 128, 128, 0.688);
+    cursor: pointer;
+    background-color:rgba(128, 128, 128, 0.688);
     color: white;
     font-size: 18px;
 }
-.fa-lock-open{
+.locked{
+  .fa-lock-open{
    display: none;
 }
-.lock:hover{
+}
+
+.unlocked{
     .fa-lock-open{
   display: block;
 }
