@@ -36,7 +36,7 @@ function generateColors(){
         if(!locks[3]) color4=generateColor();
         if(!locks[4]) color5=generateColor();
     
-        console.log(color1,color2,color3,color4,color5);
+        
 }
 
 //creatinf a render function which puts all the colors on the screen
@@ -76,7 +76,6 @@ function copiedPopUp(){
         copied.classList.add('copied');
         copied.classList.remove('copied-done');
     },2000)
-    console.log(copied);
 }
 
 //adding event listener to each button so we can copy the colors individually 
