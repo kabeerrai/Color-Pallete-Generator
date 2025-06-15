@@ -85,6 +85,7 @@ h1{
     background-color:rgba(128, 128, 128, 0.688);
     color: white;
     font-size: 18px;
+  
 }
 .locked{
   .fa-lock-open{
@@ -210,4 +211,14 @@ font-size: 20px;
     font-size: 14px;
   }
 
+}
+
+.colorName{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  position: relative;
+  top: 100px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  
 }

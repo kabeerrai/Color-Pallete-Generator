@@ -43,12 +43,22 @@ function generateColors(){
 function renderColors(){
     generateColors();
     div1.style.backgroundColor=`${color1}`;
-    div2.style.backgroundColor=`${color2}`;
-    div3.style.backgroundColor=`${color3}`;
-    div4.style.backgroundColor=`${color4}`;
-    div5.style.backgroundColor=`${color5}`;
+    colorName1.textContent=color1;
 
+    div2.style.backgroundColor=`${color2}`;
+    colorName2.textContent=color2;
+
+    div3.style.backgroundColor=`${color3}`;
+     colorName3.textContent=color3;
+
+    div4.style.backgroundColor=`${color4}`;
+    colorName4.textContent=color4;
+
+    div5.style.backgroundColor=`${color5}`;
+    colorName5.textContent=color5;
 }
+
+
 
 // running the render colors function on click of generate button
 generateBtn.addEventListener('click',()=>renderColors());
@@ -147,3 +157,14 @@ lock5.addEventListener('click',()=>{
 })
 
 
+
+//writing the names of. the colors on the divs
+let colorName1=document.querySelector('.colorName1');
+let colorName2=document.querySelector('.colorName2');
+let colorName3=document.querySelector('.colorName3');
+let colorName4=document.querySelector('.colorName4');
+let colorName5=document.querySelector('.colorName5');
+
+
+
+renderColors();
