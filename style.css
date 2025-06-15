@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 16dvh;
+    
+   border-bottom: 2px solid rgba(128, 128, 128, 0.723);
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(19, 133, 234);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.generate{
+    margin-top: 10px;
+    width: 300px;
+   height: 50px;
+   color: white;
+   font-size: 2rem;
+   background-color: rgb(19, 133, 234);
+   border-radius: 10px;
+   border: none;
+}
+
+.generate:hover{
+    background-color: rgb(45, 152, 245);
+    cursor: pointer;
+}
+
+.colors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    min-height: 82dvh;
+}
+
+.color1{
+background-color: #B80C09;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.color2{
+    background-color: #0B4F6C;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.color3{
+    background-color: #01BAEF;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.color4{
+    background-color: #FBFBFF;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.color5{
+    background-color: #040F16;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.lock{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+   cursor: pointer;
+   background-color:rgba(128, 128, 128, 0.688);
+    color: white;
+    font-size: 18px;
+}
+.fa-lock-open{
+   display: none;
+}
+.lock:hover{
+    .fa-lock-open{
+  display: block;
+}
+.fa-lock{
+    display: none;
+}
+}
+
+
+.copy{
+    height: 40px;
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color:rgba(128, 128, 128, 0.688);
+    color: white;
+    font-size: 18px;
+}
+
+
+.copied{
+    position: fixed;
+    bottom: -200px;
+    background-color: #040F16;
+    color: aliceblue;
+    z-index: 10;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.4s ease-in-out;
+     font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copied-done{
+    
+         position: fixed;
+    bottom: 20px;
+    background-color: #040F16;
+    color: aliceblue;
+    z-index: 10;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.4s ease-in-out;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.fa-circle-check{
+    margin-right: 8px;
+font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 11dvh;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .generate {
+    width: auto;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+
+  .colors {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: none;
+    height: 83dvh;
+  }
+
+  .color1,
+  .color2,
+  .color3,
+  .color4,
+  .color5 {
+    height: 150px;
+    width: 100%;
+  }
+    h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .lock,
+  .copy {
+    width: 60px;
+    font-size: 14px;
+  }
+
+  .copied,
+  .copied-done {
+    width: 80%;
+    font-size: 14px;
+  }
+
+}
